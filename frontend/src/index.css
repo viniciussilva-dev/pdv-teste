@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* === IMPRESSÃO DO COMPROVANTE ===
+   Ao imprimir, tudo fica invisível, exceto o comprovante (.print-area),
+   que passa a ocupar o topo da página. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    border: none;
+    box-shadow: none;
+  }
+}
