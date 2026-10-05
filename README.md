@@ -1,6 +1,6 @@
 # PDV: Frente de Caixa
 
-Frente de caixa (PDV) com **backend Laravel 12** e **frontend React + TypeScript**. O operador busca produtos, monta o carrinho, finaliza a venda em dinheiro, crédito ou débito (com cálculo de troco) e consulta o comprovante de qualquer venda já finalizada.
+Frente de caixa (PDV) com **backend Laravel 12** e **frontend React + TypeScript**. O operador busca produtos, monta o carrinho, finaliza a venda em dinheiro, crédito ou débito, calculando o troco quando o pagamento é em dinheiro e consulta o comprovante de qualquer venda já finalizada.
 
 A regra central do projeto: **o backend nunca confia em valores vindos do cliente.** O frontend envia apenas ids de produtos, quantidades e a forma de pagamento. Preços, subtotais, total e troco são sempre recalculados no servidor com os dados do banco.
 
